@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="library-card">
+            <div class="library-header">
+                <h1>Ade Book Haven</h1>
+                <div id="bookCount" class="badge">0 Books</div>
+            </div>
+
+
+            <form id="bookForm" class="book-form">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <input type="text" id="bookTitle" placeholder="Book Title" required>
+                    <input type="text" id="bookAuthor" placeholder="Author" required>
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <input type="text" id="bookGenre" placeholder="Genre">
+                    <input type="number" id="bookYear" placeholder="Publication Year">
+                </div>
+                <button type="submit" class="btn">Add Book to Library</button>
+            </form>
+
+
+            <div id="bookList"></div>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
